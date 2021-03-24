@@ -78,8 +78,10 @@ array_push($tab,array($name,$prenom,$email,$numero));
 <?php
 echo "<h2>Your Input:</h2>";
 for($i=0;$i<sizeof($tab);$i++){
- echo $tab[$i];
- echo "<br>"; 
+  for($j=0;$j<4;$j++){
+    echo $tab[$i][$j];
+    echo "<br>";
+  }
 }
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
