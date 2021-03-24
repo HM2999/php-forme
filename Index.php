@@ -30,30 +30,8 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-$k = "";
-$k =$k."<br>Nom: ".$name."<br>Prenom: ".$prenom."<br>numero: ".$numero."<br>email: ". $email."<br>";
-// class formulair {
-//   // Properties
-//   public $nom;
-//   public $prenom;
-//   public $email;
-//   public $numero;
-  
-
-  
-//   function get_name() {
-//     return $this->nom;
-//   }
-//   function get_email() {
-//     return $this->email;
-//   }
-//   function get_prenom() {
-//     return $this->prenom;
-//   }
-//   function get_numero() {
-//     return $this->numero;
-//   }
-// }
+$tab = array();
+array_push($tab,array($name,$prenom,$email,$numero));
 ?>  
 
 <div class="container">
@@ -99,9 +77,11 @@ $k =$k."<br>Nom: ".$name."<br>Prenom: ".$prenom."<br>numero: ".$numero."<br>emai
 
 <?php
 echo "<h2>Your Input:</h2>";
-echo "<div>"."<br>Nom: ".$name."<br>Prenom: ".$prenom."<br>numero: ".$numero."<br>email: ". $email."<br>"."</div>";
+for($i=0;$i<sizeof($tab);$i++){
+ echo $tab[$i];
+ echo "<br>"; 
+}
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
 </body>
 </html>
