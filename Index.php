@@ -10,33 +10,19 @@
 </head>
 <body>
   <?php
-// define variables and set to empty values
-$name = $email = $prenom = $numero ="";
+  session_start();
+  if(isset($_SESSION['prenom'])){
+    $prenom=$_SESSION['prenom'];
+  }else{
+    $prenom=[];
+  }
+$_SESSION['prenom']=$prenom;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["nom"]);
-  $email = test_input($_POST["email"]);
-  $numero = test_input($_POST["numero"]);
-  $prenom = test_input($_POST["prenom"]);
-
-}
-
-function test_input($data) {
- //for remove spaces
-    $data = trim($data);
-//suprimer les antislash 
-  $data = stripslashes($data);
-//Convertit les caractères spéciaux en entités HTML
-  $data = htmlspecialchars($data);
-  return $data;
-}
-$tab = array();
-array_push($tab,array($name,$prenom,$email,$numero));
-?>  
+  ?>
 
 <div class="container">
 <div class="row">
-    <form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form  method="post" >
       <div class="row justify-content-center ">
         <div class="col-5 bg-light color p-4 m-5 rounded-3">
           <div class="d-flex justify-content-center">
@@ -77,9 +63,10 @@ array_push($tab,array($name,$prenom,$email,$numero));
 
 <?php
 echo "<h2>Your Input:</h2>";
-for($i=0;$i<sizeof($tab);$i++){
- echo $tab[$i];
- echo "<br>"; 
+$count=0;
+foreach($prenom as $key=>$value){
+  $count++;
+  print "<br>$count: $prenom[$key]";
 }
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
