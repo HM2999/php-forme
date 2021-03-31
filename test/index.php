@@ -28,7 +28,7 @@
 
 <div class="container">
 <div class="row">
-    <form action="liste.php" method="post" > 
+    <form action="inscription.php" method="post" > 
       <div class="row justify-content-center ">
         <div class="col-5 bg-light color p-4 m-4 rounded-3">
           <div class="d-flex justify-content-center">

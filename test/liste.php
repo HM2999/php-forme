@@ -7,6 +7,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
 </head>
 <body>
+<?php
+include("menu.php");
+?>
     <table>
     <tr>
     <td class="bg-success"> nom</td>
