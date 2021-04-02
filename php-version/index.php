@@ -11,31 +11,46 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">Page d'inscription</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="affichage.php">Imprimer</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
 <div class="container">
 <div class="row">
-    <form action="affichage.php" target="_blank" method="get" > 
+    <form action="affichage.php" method="post" > 
       <div class="row justify-content-center ">
-        <div class="col-5 bg-light color p-4 m-5 rounded-3">
+        <div class="col-5 bg-light color p-4 m-4 rounded-3">
           <div class="d-flex justify-content-center">
             <h1 class="pb-3">login</h1>
           </div>
           <fieldset>
            
             <div class="input-group mb-4">
-              <input type="text" class="form-control p-2" placeholder="Prenom" name="prenom">
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Numbre</span> -->
+              <input type="text" class="form-control p-2" placeholder="Prenom" name="prenom" required >
+    
             </div>
             <div class="input-group mb-4">
-              <input type="text" class="form-control p-2" placeholder="Nom" name="nom">
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Name</span> -->
+              <input type="text" class="form-control p-2" placeholder="Nom" name="nom" required >
+        
             </div>
             <div class="input-group mb-4">
-              <input type="text" class="form-control p-2" placeholder="Email" name="email">
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">@test.com</span> -->
+              <input type="text" class="form-control p-2" placeholder="Email" name="email" equired>
+       
             </div>
             <div class="input-group mb-4">
-              <input type="text" class="form-control p-2" placeholder="Numéro" name="numero">
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Prenom</span> -->
+              <input type="text" class="form-control p-2" placeholder="Numéro" name="numero" equired>
+
             </div>
           
             <button type="submit" class="btn btn-primary">Submit</button>

@@ -1,0 +1,40 @@
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1315' height='668' preserveAspectRatio='none' viewBox='0 0 1315 668'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1534%26quot%3b)' fill='none'%3e%3crect width='1315' height='668' x='0' y='0' fill='rgba(86%2c 155%2c 225%2c 0.98)'%3e%3c/rect%3e%3cpath d='M0%2c358.894C70.174%2c361.691%2c142.091%2c350.998%2c201.313%2c313.249C260.646%2c275.429%2c305.643%2c216.511%2c328.025%2c149.804C349.258%2c86.523%2c325.696%2c20.354%2c321.948%2c-46.289C317.775%2c-120.496%2c346.309%2c-202.449%2c304.748%2c-264.066C262.546%2c-326.634%2c181.886%2c-354.557%2c107.114%2c-364.795C37.706%2c-374.299%2c-26.419%2c-338.634%2c-93.55%2c-318.604C-160.344%2c-298.674%2c-238.697%2c-299.032%2c-285.724%2c-247.582C-333.005%2c-195.853%2c-333.369%2c-118.655%2c-340.07%2c-48.895C-346.492%2c17.959%2c-350.21%2c86.121%2c-323.706%2c147.832C-296.862%2c210.334%2c-248.238%2c260.448%2c-191.257%2c297.601C-134.019%2c334.921%2c-68.276%2c356.173%2c0%2c358.894' fill='rgba(255%2c 250%2c 250%2c 0.98)'%3e%3c/path%3e%3cpath d='M1315 1212.659C1415.658 1214.172 1495.088 1134.367 1578.397 1077.853 1659.623 1022.7529999999999 1742.673 970.2719999999999 1794.857 887.143 1851.8899999999999 796.289 1899.426 692.299 1887.335 585.711 1875.116 477.99 1814.462 376.085 1729.279 309.025 1650.008 246.61900000000003 1540.174 258.787 1442.085 235.18900000000002 1349.901 213.01100000000002 1263.715 159.50400000000002 1170.094 174.49599999999998 1070.943 190.373 987.886 252.709 913.242 319.875 830.4449999999999 394.378 718.461 470.66999999999996 717.173 582.045 715.867 694.969 842.566 761.595 907.06 854.3 958.063 927.613 989.546 1011.069 1056.643 1070.011 1132.077 1136.277 1214.604 1211.15 1315 1212.659' fill='rgba(147%2c 191%2c 236%2c 0.98)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1534'%3e%3crect width='1315' height='668' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    box-sizing: border-box;
+}
+input {
+    border: 1px solid black;
+}
+
+.input-group-text{
+    width: 100px;
+    
+}
+.color{
+    background-color: #f8f9fad2!important;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  table, td, th {
+    border: 1.5px solid rgb(122, 117, 117);
+    background-color: #f2f2f2b0;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  th{
+    background-color: #4CAF50;
+    color: white;
+  }
+  td{
+      width: 30%;
+  }
+  input[type="text" i] {
+    padding: 8px;
+    width: 80%;
+}
