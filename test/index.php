@@ -19,7 +19,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="affichage.php">Imprimer</a>
+        <a class="nav-link" href="liste.php">Imprimer</a>
       </div>
     </div>
   </div>

@@ -14,6 +14,8 @@ $personne =new Personne($_POST["nom"],$_POST["prenom"],$_POST["email"],$_POST["n
 // Traitement
 $personnes_list[] = json_decode( json_encode($personne));
 $_SESSION['Personne'] =  $personnes_list;
+header('Location: http://localhost:3300/liste.php');
+
 }
 
 
