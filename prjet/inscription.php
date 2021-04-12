@@ -16,7 +16,8 @@ $personnes_list[] = json_decode( json_encode($personne));
 $_SESSION['Personne'] =  $personnes_list;
 }
 
-
+header('Location: http://localhost:3300/liste.php');
+exit;
 
 ?>
 <!DOCTYPE html>
